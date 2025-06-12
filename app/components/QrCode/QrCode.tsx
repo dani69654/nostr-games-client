@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import { generateQRCode } from './utils/qrCode';
+import { generateQRCode } from '../../utils/qrCode.utils';
 
-export default function QrCode({ invoice }: { invoice: string }) {
+export const QrCode = ({ invoice }: { invoice: string }) => {
     return (
         <div className="flex justify-center">
             <div className="bg-white p-4 rounded-xl shadow-lg">
@@ -24,4 +24,4 @@ export default function QrCode({ invoice }: { invoice: string }) {
             </div>
         </div>
     );
-}
+};

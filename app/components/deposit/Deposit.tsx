@@ -1,8 +1,8 @@
 'use client';
 
-import { DepositAmountStep } from './components/deposit/DepositAmountStep';
-import { DepositInvoiceStep } from './components/deposit/DepositInvoiceStep';
-import { useDeposit } from './hooks/useDeposit';
+import { DepositAmountStep } from './DepositAmountStep';
+import { DepositInvoiceStep } from './DepositInvoiceStep';
+import { useDeposit } from '../../hooks/useDeposit';
 
 export const Deposit = ({ nOfPlayers }: { nOfPlayers: number }) => {
     const { handleGenereteDepositInvoice, amount, error, isLoading, invoice, step, setAmount, reset } = useDeposit({

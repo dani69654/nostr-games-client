@@ -1,4 +1,4 @@
-import QrCode from '@/app/QrCode';
+import { QrCode } from '../QrCode/QrCode';
 
 export const DepositInvoiceStep = ({
     invoice,

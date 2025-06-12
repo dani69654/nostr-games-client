@@ -1,7 +1,7 @@
 'use client';
 
 import { useAuthStore } from './stores/authStore';
-import { Deposit } from './Deposit';
+import { Deposit } from './components/deposit/Deposit';
 
 export default function CoinFlip() {
     const { publicKey } = useAuthStore();
